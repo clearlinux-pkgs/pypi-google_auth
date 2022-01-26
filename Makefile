@@ -1,5 +1,5 @@
 PKG_NAME := pypi-google_auth
-URL = https://files.pythonhosted.org/packages/b8/1b/6f7489ce74ea73e88f907dba93d6929c6c4ebb1034245c17e9264f0f1ae6/google-auth-2.4.1.tar.gz
+URL = https://files.pythonhosted.org/packages/a8/35/08fccaff6bd77e4e584f783b7463dff5f60b1ab86e67a2db11effcf3288b/google-auth-2.5.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
