@@ -4,7 +4,7 @@
 #
 Name     : pypi-google_auth
 Version  : 2.6.3
-Release  : 37
+Release  : 38
 URL      : https://files.pythonhosted.org/packages/ad/48/37cd164bfdd85a3b18bb18d221642407d2b75bc317ea3d0b62a5a355c18a/google-auth-2.6.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ad/48/37cd164bfdd85a3b18bb18d221642407d2b75bc317ea3d0b62a5a355c18a/google-auth-2.6.3.tar.gz
 Summary  : Google Authentication Library
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1649376476
+export SOURCE_DATE_EPOCH=1649752821
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
