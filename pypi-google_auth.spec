@@ -4,7 +4,7 @@
 #
 Name     : pypi-google_auth
 Version  : 2.10.0
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/9b/5d/f931f93183069e0bee341bc06040c8a15f381fbe69fe060f0871132a720e/google-auth-2.10.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9b/5d/f931f93183069e0bee341bc06040c8a15f381fbe69fe060f0871132a720e/google-auth-2.10.0.tar.gz
 Summary  : Google Authentication Library
