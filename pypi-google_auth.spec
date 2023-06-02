@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-google_auth
-Version  : 2.19.0
-Release  : 73
-URL      : https://files.pythonhosted.org/packages/97/e8/a3e918ab46e91e87019e2f96aec2390e11177da536b7bc75d14c8534d9c9/google-auth-2.19.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/97/e8/a3e918ab46e91e87019e2f96aec2390e11177da536b7bc75d14c8534d9c9/google-auth-2.19.0.tar.gz
+Version  : 2.19.1
+Release  : 74
+URL      : https://files.pythonhosted.org/packages/77/52/4e59fb37fd1f6fe4609f91d4792640b50294172616ff5bf3108eafa17f9a/google-auth-2.19.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/77/52/4e59fb37fd1f6fe4609f91d4792640b50294172616ff5bf3108eafa17f9a/google-auth-2.19.1.tar.gz
 Summary  : Google Authentication Library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -59,10 +59,10 @@ python3 components for the pypi-google_auth package.
 
 
 %prep
-%setup -q -n google-auth-2.19.0
-cd %{_builddir}/google-auth-2.19.0
+%setup -q -n google-auth-2.19.1
+cd %{_builddir}/google-auth-2.19.1
 pushd ..
-cp -a google-auth-2.19.0 buildavx2
+cp -a google-auth-2.19.1 buildavx2
 popd
 
 %build
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685119229
+export SOURCE_DATE_EPOCH=1685718955
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
