@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-google_auth
-Version  : 2.19.1
-Release  : 74
-URL      : https://files.pythonhosted.org/packages/77/52/4e59fb37fd1f6fe4609f91d4792640b50294172616ff5bf3108eafa17f9a/google-auth-2.19.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/77/52/4e59fb37fd1f6fe4609f91d4792640b50294172616ff5bf3108eafa17f9a/google-auth-2.19.1.tar.gz
+Version  : 2.20.0
+Release  : 75
+URL      : https://files.pythonhosted.org/packages/4b/e0/d2c96098280f17eb626d4da0b7e553b8e5648d57514c8cefec851c16920c/google-auth-2.20.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/4b/e0/d2c96098280f17eb626d4da0b7e553b8e5648d57514c8cefec851c16920c/google-auth-2.20.0.tar.gz
 Summary  : Google Authentication Library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -15,6 +15,11 @@ Requires: pypi-google_auth-license = %{version}-%{release}
 Requires: pypi-google_auth-python = %{version}-%{release}
 Requires: pypi-google_auth-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(cachetools)
+BuildRequires : pypi(pyasn1_modules)
+BuildRequires : pypi(rsa)
+BuildRequires : pypi(six)
+BuildRequires : pypi(urllib3)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -59,10 +64,10 @@ python3 components for the pypi-google_auth package.
 
 
 %prep
-%setup -q -n google-auth-2.19.1
-cd %{_builddir}/google-auth-2.19.1
+%setup -q -n google-auth-2.20.0
+cd %{_builddir}/google-auth-2.20.0
 pushd ..
-cp -a google-auth-2.19.1 buildavx2
+cp -a google-auth-2.20.0 buildavx2
 popd
 
 %build
@@ -70,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685718955
+export SOURCE_DATE_EPOCH=1686713842
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
